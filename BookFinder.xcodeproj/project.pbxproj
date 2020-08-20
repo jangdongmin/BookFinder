@@ -23,6 +23,7 @@
 		09504C5D24EEB58A0077BF68 /* BookDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09504C5C24EEB58A0077BF68 /* BookDetailInfoTableViewCell.swift */; };
 		09504C6224EEDCF20077BF68 /* BookListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09504C5F24EEDCF20077BF68 /* BookListTableView.swift */; };
 		09504C6324EEDCF20077BF68 /* BookListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09504C6124EEDCF20077BF68 /* BookListTableViewCell.swift */; };
+		09504C6B24EEE04E0077BF68 /* BookFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09504C6A24EEE04E0077BF68 /* BookFinderTests.swift */; };
 		095454A724EA843B0094FF5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095454A624EA843B0094FF5A /* AppDelegate.swift */; };
 		095454AE24EA843B0094FF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 095454AC24EA843B0094FF5A /* Main.storyboard */; };
 		095454B024EA843C0094FF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 095454AF24EA843C0094FF5A /* Assets.xcassets */; };
@@ -32,6 +33,16 @@
 		095454CF24EA8C9A0094FF5A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 095454CE24EA8C9A0094FF5A /* APIClient.swift */; };
 		6FFD21559CA3511DCE8836D9 /* Pods_BookFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE6104E29221C9E145A5BC7 /* Pods_BookFinder.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09504C6D24EEE04E0077BF68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0954549B24EA843B0094FF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095454A224EA843B0094FF5A;
+			remoteInfo = BookFinder;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		094C4B3324ED604A007A1D68 /* SearchBookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookPresenter.swift; sourceTree = "<group>"; };
@@ -50,6 +61,9 @@
 		09504C5C24EEB58A0077BF68 /* BookDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		09504C5F24EEDCF20077BF68 /* BookListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableView.swift; sourceTree = "<group>"; };
 		09504C6124EEDCF20077BF68 /* BookListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookListTableViewCell.swift; sourceTree = "<group>"; };
+		09504C6824EEE04E0077BF68 /* BookFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookFinderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09504C6A24EEE04E0077BF68 /* BookFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookFinderTests.swift; sourceTree = "<group>"; };
+		09504C6C24EEE04E0077BF68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		095454A324EA843B0094FF5A /* BookFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		095454A624EA843B0094FF5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		095454AD24EA843B0094FF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +79,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09504C6524EEE04E0077BF68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		095454A024EA843B0094FF5A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,10 +167,20 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09504C6924EEE04E0077BF68 /* BookFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				09504C6A24EEE04E0077BF68 /* BookFinderTests.swift */,
+				09504C6C24EEE04E0077BF68 /* Info.plist */,
+			);
+			path = BookFinderTests;
+			sourceTree = "<group>";
+		};
 		0954549A24EA843B0094FF5A = {
 			isa = PBXGroup;
 			children = (
 				095454A524EA843B0094FF5A /* BookFinder */,
+				09504C6924EEE04E0077BF68 /* BookFinderTests */,
 				095454A424EA843B0094FF5A /* Products */,
 				66DC89CE370D3A5BA4FEAE88 /* Pods */,
 				00330883E3BED869D69E4385 /* Frameworks */,
@@ -160,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				095454A324EA843B0094FF5A /* BookFinder.app */,
+				09504C6824EEE04E0077BF68 /* BookFinderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +241,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		09504C6724EEE04E0077BF68 /* BookFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09504C7124EEE04E0077BF68 /* Build configuration list for PBXNativeTarget "BookFinderTests" */;
+			buildPhases = (
+				09504C6424EEE04E0077BF68 /* Sources */,
+				09504C6524EEE04E0077BF68 /* Frameworks */,
+				09504C6624EEE04E0077BF68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09504C6E24EEE04E0077BF68 /* PBXTargetDependency */,
+			);
+			name = BookFinderTests;
+			productName = BookFinderTests;
+			productReference = 09504C6824EEE04E0077BF68 /* BookFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		095454A224EA843B0094FF5A /* BookFinder */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095454B724EA843C0094FF5A /* Build configuration list for PBXNativeTarget "BookFinder" */;
@@ -238,6 +288,10 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Paul Jang";
 				TargetAttributes = {
+					09504C6724EEE04E0077BF68 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 095454A224EA843B0094FF5A;
+					};
 					095454A224EA843B0094FF5A = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -257,11 +311,19 @@
 			projectRoot = "";
 			targets = (
 				095454A224EA843B0094FF5A /* BookFinder */,
+				09504C6724EEE04E0077BF68 /* BookFinderTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09504C6624EEE04E0077BF68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		095454A124EA843B0094FF5A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +379,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09504C6424EEE04E0077BF68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09504C6B24EEE04E0077BF68 /* BookFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0954549F24EA843B0094FF5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,6 +416,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		09504C6E24EEE04E0077BF68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095454A224EA843B0094FF5A /* BookFinder */;
+			targetProxy = 09504C6D24EEE04E0077BF68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		095454AC24EA843B0094FF5A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -366,6 +444,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		09504C6F24EEE04E0077BF68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jdm.BookFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookFinder.app/BookFinder";
+			};
+			name = Debug;
+		};
+		09504C7024EEE04E0077BF68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BookFinderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jdm.BookFinderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookFinder.app/BookFinder";
+			};
+			name = Release;
+		};
 		095454B524EA843C0094FF5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -521,6 +637,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09504C7124EEE04E0077BF68 /* Build configuration list for PBXNativeTarget "BookFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09504C6F24EEE04E0077BF68 /* Debug */,
+				09504C7024EEE04E0077BF68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0954549E24EA843B0094FF5A /* Build configuration list for PBXProject "BookFinder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

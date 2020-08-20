@@ -14,7 +14,7 @@ import UIKit
 import SwiftyJSON
 protocol SearchBookBusinessLogic
 {
-    func searchBook(request: BookInfo.Request)
+    func searchBook(request: BookInfo.Request, completion: @escaping (Result<[BookInfo.BookModel], Error>) -> Void)
     func dataClear()
 }
 
@@ -33,8 +33,8 @@ class SearchBookInteractor: SearchBookBusinessLogic, SearchBookDataStore
     var worker: SearchBookWorker?
     
     // MARK: Do something
-    
-    func searchBook(request: BookInfo.Request) {
+     
+    func searchBook(request: BookInfo.Request, completion: @escaping ((Result<[BookInfo.BookModel], Error>) -> Void)) {
         worker = SearchBookWorker()
         worker?.search(keyword: request.q, page: request.page) { result in
             switch result {
@@ -63,8 +63,11 @@ class SearchBookInteractor: SearchBookBusinessLogic, SearchBookDataStore
                  
                 let response = BookInfo.Response(totalItems: self.totalItems, bookModel: self.bookModel, page: request.page)
                 self.presenter?.presentBookList(response: response)
+                
+                completion(.success(self.bookModel))
             case .failure(let error):
                 print(error.localizedDescription)
+                completion(.failure(error))
             }
         }
     }

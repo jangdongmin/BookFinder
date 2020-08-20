@@ -111,7 +111,7 @@ extension SearchBookViewController: UISearchBarDelegate, BookListTableViewDelega
     }
     
     func nextPage(page: Int) {
-        interactor?.searchBook(request: BookInfo.Request(q: self.searchText, page: page))
+        interactor?.searchBook(request: BookInfo.Request(q: self.searchText, page: page), completion: {_ in })
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -119,7 +119,7 @@ extension SearchBookViewController: UISearchBarDelegate, BookListTableViewDelega
          
         indicator.isHidden = false
         self.searchText = searchText
-        interactor?.searchBook(request: BookInfo.Request(q: searchText, page: 0))
+        interactor?.searchBook(request: BookInfo.Request(q: searchText, page: 0), completion: {_ in })
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
