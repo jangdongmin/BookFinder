@@ -9,14 +9,14 @@
 import UIKit
 import SDWebImage
 
-protocol BookListTableViewDelegate {
+protocol BookListTableViewDelegate: class {
     func nextPage(page: Int)
     func select(index: Int)
 }
 
 
 class BookListTableView: UITableView {
-    var bookListTableViewDelegate: BookListTableViewDelegate?
+    weak var bookListTableViewDelegate: BookListTableViewDelegate?
     var viewModel: BookInfo.ViewModel?
     
     var isLoading = false
